@@ -1,0 +1,225 @@
+﻿<Window x:Class="JoshComputer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JoshComputer"
+        mc:Ignorable="d"
+        Title="Josh Degazio's Computer Build" Height="350" Width="525">
+    <StackPanel RenderTransformOrigin="0.515,0.507">
+        <Label Content="&#x0a;Total Build Cost: $100,954.55"  MaxWidth="200" Margin="0,0,-53,0" />
+        <Grid Width="00" Height="102"  Margin="208,0,209,0" >
+            <Button Content="Clear" 
+                MaxWidth="100"
+                x:Name="clear_btn"
+                Click="clear_btn_active" Margin="0,21,-417,58"/>
+            <Button Content="Monitor" 
+                MaxWidth="100" 
+                x:Name="monitor_btn"
+                Click="monitor_btn_active" RenderTransformOrigin="0.489,-1.361" Margin="0,0,-417,79"/>
+            <Button Content="Power Supply" 
+                MaxWidth="100"
+                x:Name="psu_btn"
+                Click="psu_btn_active" Margin="-98,0,-319,79" RenderTransformOrigin="0.499,1.815"/>
+            <Button Content="Case" 
+                MaxWidth="100"
+                x:Name="case_btn"
+                Click="case_btn_active" Margin="-98,23,-319,58"/>
+            <Button Content="Video Card" 
+                MaxWidth="100"
+                x:Name="vcard_btn"
+                Click="vcard_btn_active" Margin="-198,23,-219,58"/>
+            <Button Content="SSD Memory" 
+                MaxWidth="100"
+                x:Name="ssd_btn"
+                Click="ssd_btn_active" Margin="-296,23,-121,58"/>
+            <Button Content="RAM Sticks" 
+                MaxWidth="100"
+                x:Name="ram_btn"
+                Click="ram_btn_active" Margin="-198,0,-219,79"/>
+            <Button Content="Motherboard" 
+                MaxWidth="100"
+                x:Name="motherboard_btn"
+                Click="motherboard_btn_active" Margin="-396,23,-21,58"/>
+            <Button Content="CPU Cooler"
+                MaxWidth="100"
+                x:Name="cpu_cooler_btn"
+                Click="cpu_cooler_btn_active" Margin="-296,0,-121,79" RenderTransformOrigin="-0.005,1.264"/>
+            <Button Content="CPU" 
+                MaxWidth="100"
+                x:Name="cpu_btn"
+                Click="cpu_btn_active" Margin="-396,0,-21,79"/>
+        </Grid>
+        <Grid Background="White" Width="100" Height="100" >
+            <Image x:Name="cpu_picture"
+               Source="https://images-na.ssl-images-amazon.com/images/I/512zWhJuLmL._SY355_.jpg" Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/zXDNfQ &#x0a;Desc: INTEL XEON 22 CORE PROCESSOR E5-2699V4 2.2GHZ 55MB&#x0a;         SMART CACHE 9.6 GT/S QPI TDP 145W&#x0a;Quantity: 2 &#x0a;Individual Part Price: $5,172.30&#x0a;Total Part Price: $10,344.60"
+               Margin="-207,-58,-210,53"
+                   x:Name="cpu_details"
+                   Visibility="Hidden"
+               />
+            <Image x:Name="cpu_cooler_picture"
+               Source="https://images10.newegg.com/ProductImage/35-106-220-08.jpg?ex=2" Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/voVEZj &#x0a;Desc: Thermaltake Water 3.0 Extreme (CLW0224) Water/Liquid CPU Cooler 240MM &#x0a;Quantity: 2&#x0a;Individual Part Price: $261.93 &#x0a;Total Part Price: $523.86"
+               Margin="-207,-58,-210,67"
+                   x:Name="cpu_cooler_details"
+                   Visibility="Hidden"
+               />
+            <Image x:Name="motherboard_picture"
+               Source="http://ecx.images-amazon.com/images/I/61dHxEK8gaL.jpg"
+                   Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/7x3qwA &#x0a;Desc: ASUS Z10PE Motherboard - SSI EEB - LGA2011-v3 Socket, 2 CPUs supported, C612, &#x0a;USB 3.0, 2 x Gigabit LAN, Onboard Graphics, HD Audio (8-channel) - Z10PE-D16 WS&#x0a;Quantity: 1 &#x0a;Total Part Price: $662.99"
+               Margin="-207,-58,-210,67"
+                   x:Name="motherboard_details"
+                   Visibility="Hidden"
+               />
+            <Image x:Name="ram_picture"
+               Source="https://images-na.ssl-images-amazon.com/images/I/81UPUrJkBsL._SX522_.jpg"
+                   Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/pCvf44 &#x0a;Desc: Kingston Technology ValueRAM 16GB DDR4&#x0a;Quantity: 16&#x0a;Individual Part Price: $2,552.89 &#x0a;Total Part Price: $40,846.24"
+               Margin="-207,-58,-210,67"
+                   x:Name="ram_details"
+                   Visibility="Hidden"
+               />
+            <Image x:Name="ssd_picture"
+               Source="https://goo.gl/GzxxEU"
+                   Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/D9Rd5Z &#x0a;Desc: Intel DC P3608 4 TB Internal Solid State Drive - PCI Express - Plug-in Card - &#x0a;4.88 GB/s MaximumRead Transfer Rate - 2.93 GB/s Maximum Write Transfer Rate -&#x0a;1 Pack - 256-bit &#x0a;Quantity: 3 &#x0a;Individual Part Price: $11,033.99&#x0a;Total Part Price: $33,101.97"
+               Margin="-207,-58,-210,53"
+                   x:Name="ssd_details"
+                   Visibility="Hidden"
+               />
+            <Image x:Name="vcard_picture"
+               Source="http://www.pc-canada.com/dd2/img/item/A-500x500/595490.jpg"
+                   Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/EgiKoG &#x0a;Desc: PNY Quadro GP100 Graphic Card - 16 GB HBM2 - Full-height - Dual Slot Space Required - &#x0a;4096 bit Bus Width - Fan Cooler - OpenGL 4.5, OpenCL, DirectX 12, Vulkan 1.0, DirectCompute&#x0a; - 4 x DisplayPort - 1 x Total Number of DVI (1 x DVI-I) - Linux, PC - 4 x Monitors Supported&#x0a;Quantity: 1 &#x0a;Total Part Price: $8,473.99"
+               Margin="-207,-58,-210,53"
+                   x:Name="vcard_details"
+                   Visibility="Hidden"
+               />
+            <Image x:Name="case_picture"
+               Source="https://images-na.ssl-images-amazon.com/images/I/41r9QINOPIL.jpg"
+                   Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/ncGehw &#x0a;Desc: Phanteks Enthoo Series Primo Aluminum ATX Ultimate Full Tower Computer Case, White&#x0a;Quantity: 1 &#x0a;Total Part Price: $339.99"
+               Margin="-207,-58,-210,53"
+                   x:Name="case_details"
+                   Visibility="Hidden"
+            />
+                <Image x:Name="psu_picture"
+                   Source="https://goo.gl/nvYYbh"
+                   Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/Ub6Qrx &#x0a;Desc: Corsair AX1600i Digital ATX Power Supply - 1600 Watt Fully-Modular PSU - &#x0a;ATX12V/EPS12V - 120 V AC, 230 V AC Input Voltage - 5 V DC, 3.3 V DC, 12 V DC, 12 V DC, &#x0a;5 V DC Output Voltage - 1 Fans - Internal - Modular - 94% Efficiency - 1600 W&#x0a;Quantity: 1 &#x0a;Total Part Price: $529.99"
+               Margin="-207,-58,-210,53"
+                   x:Name="psu_details"
+                   Visibility="Hidden"
+               />
+            <Image x:Name="monitor_picture"
+                   Source="https://images.anandtech.com/doci/11220/dell_8k_monitor-678-1_678x452.jpg"
+                   Margin="-25,-14,-25,-95" RenderTransformOrigin="0.5,0.5"
+                   Visibility="Hidden"
+        >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.156"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.583"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="Link: https://goo.gl/xuYLTG &#x0a;Desc: Dell UltraSharp UP3218K 32inch UHD+ LED Monitor&#x0a;Quantity: 1 &#x0a;Total Part Price: $6,189.92"
+               Margin="-207,-58,-210,53"
+                   x:Name="monitor_details"
+                   Visibility="Hidden"
+               />
+        </Grid>
+    </StackPanel>
+</Window>
